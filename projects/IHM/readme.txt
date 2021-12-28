@@ -1,0 +1,1 @@
+Site-projet créé avec mon binôme en TP d'IHM (interface homme machine) et sous la supervision de notre responsable de TP. Le but était de créer un site ergonomique. Le site a remporté la meilleure note.

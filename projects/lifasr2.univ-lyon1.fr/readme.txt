@@ -1,0 +1,1 @@
+Ensemble des projets de LIFASR2 (L1). J'ai artificiellement recréé la hierarchie des répertoires du serveur que l'on a utilisé afin que tout fonctionne. Il y a deux projets: un jeu (2048) et un (mini mini) réseau-social, que j'avais amélioré à renfort d'ajax.

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E0E0E0;
+    font-family: open sans;
+    color: #424242;
+}
+a {
+    text-decoration: none;
+    color: #424242;
+}
+h1 {
+    margin: 50px auto;
+    font-weight: 600;
+    text-align: center;
+    cursor: default;
+}
+#articles {
+    width: 70vw;
+    min-width: 300px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    font-weight: 700;
+    color: #555555;
+    font-size: 16px;
+}
+.article {
+    background-color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    padding: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 250ms ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.article:hover {
+    transition: all 250ms ease;
+    background-color: #EEEEEE;
+}
+.content {
+    width: calc(100% - 20px);
+}
+.status {
+    padding: 10px;
+}
+
+
+
+#writer {
+    display: block;
+    background-color: white;
+    width: 70vw;
+    min-width: 300px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+input {
+    padding: 15px;
+    width: calc(100% - 30px);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+textarea {
+    padding: 15px;
+    width: calc(100% - 30px);
+    outline: none;
+    border: none;
+    resize: vertical;
+    min-height: 350px;
+}
+#actions {
+    width: 70vw;
+    min-width: 300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#actions svg {
+    padding: 15px;
+    cursor: pointer;
+}
+
+#popup {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #F0F4C3;
+    color: #424242;
+    transition: all 250ms;
+    padding: 10px 25px;
+    border-radius: 2px;
+    min-width: 200px;
+    max-width: 50vw;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+#popup:hover {
+    transition: all 250ms;
+    transform: translateY(-10px);
+}
