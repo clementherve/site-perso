@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }}</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/public/css/theme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+    {{ include('header.twig') }}
+    
+	<div id="article">
+		<article>
+            <h2>{{ title }}</h2>
+            <div class='tag-box'>
+                {% for tag in tags %}
+                    <a href='/articles/tag/{{ tag }}'>#{{ tag }}</a>
+                {% endfor %}
+            </div>
+			{{ content | raw }}
+		</article>
+	</div>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/public/css/theme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+    {{ include('header.twig') }}
+
+	<div id="articles">
+		<article>
+			{% for project in projects %}
+                <div class='article'>
+                    <a href='{{ project.url }}'><h3>{{ project.name }}</h3></a>
+                    <p>{{ project.readme }}</p>
+                </div>
+            {% endfor %}
+		</article>
+	</div>
+</body>
+</html>

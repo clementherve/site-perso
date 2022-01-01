@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A propos</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/public/css/theme.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            
+        </style>
+    </head>
+    <body>
+
+        {{ include('header.twig') }}
+
+        <article id="about">
+
+            <div class="social">
+                <a href="https://github.com/clementherve" target="_blank"><img src="/public/image/github.png"></a>
+                <a href="https://twitter.com/cryptoBidule" target="_blank"><img src="/public/image/twitter.png"></a>
+                <a href="https://www.linkedin.com/in/clement-herve/" target="_blank"><img src="/public/image/linkedin.png"></a>
+                <a href="https://tryhackme.com/p/rda" target="_blank"><img src="/public/image/tryhackme.png"></a>
+            </div>
+
+            <h2>Hello!</h2>
+            <p>
+                Je suis étudiant en 5ème année d'informatique. Passionné & touche à tout, ce site est le reflet de mes expérimentations. J'écris rarement sur le blog, la plupart des articles remontent au lycée !
+            </p>
+
+            <h3>En dehors de l'informatique</h3>
+            <p>
+                Ado, j'adorais les romans noirs et les bandes dessinées.
+                Meme si j'ai en ce moment moins de temps à consacrer à cette activité, il m'arrive de temps à autre de me poser et d'apprécier la déconnexion offerte par une bonne lecture.
+            </p>
+            <p>
+                Plus jeune, je me suis pris de passion pour le cyclisme, j'ai participé à des compétitions quand j'étais au collège. Je me suis depuis essayé à d'autres sports (tennis, basket, dance, escrime). A l'université, je fais de la musculation.
+            </p>
+
+            <p>
+                Je fais de la photo en amateur. J'ai un Canon EOS 2000D avec une 18-55 f/3.5-5.6. Si vous etes curieu.x.ses, vous trouverez mon instagram <a href="https://www.instagram.com/clement.hrve/" target="_blank">ici</a>.
+            </p>
+
+            <h3>Associations, soutien scolaire</h3>
+            <p>
+                Aimant transmettre ce que je sais, j'ai fais partie de deux associations: la <a href="http://maisondesseniors.mions.fr" target="_blank">maison des séniors</a> et <a href="http://mions.reussite.free.fr/" target="_blank">Mions réussite solidarité</a>. Le temps me manquant, je me suis restreint à une seule que j'aide régulièrement. Son but est d'enseigner les bases de l'informatique aux séniors. Cependant, en 2021, cette association a été contrainte par la pandémie de terminer ses activités.
+            </p>
+            <p>
+                Je donne également des cours de mathématiques à domicile via SuperProf. J'ai aidé plusieurs collégiens à passer leur brevet avec succès.
+            </p>
+
+            <h3>Emplois</h3>
+            <p>
+                En 2018, j'ai travaillé en intérim comme préparateur de commande. Il s'agissait d'un travail physique où le plus important était de tenir la cadence et les quotas de production. <br>
+                En 2020, j'ai été stagiaire à l'IFPEN. J'ai conceptualisé et développé dans des délais cours une application de monitoring d'un batiment à énergie positive.<br>
+                L'année d'après, en 2021, j'ai de nouveau été stagiaire à l'IFPEN. J'y ai découvert les bases de données time-series (influxDB) ainsi que l'outil de dashboarding Grafana. Le sujet principal de mon stage a été de migrer la base de donnée de 1.8 vers 2.0. Des missions annexes ont été réalisées, comme l'écriture de scripts pour des dockers.
+            </p>
+            <p>
+                Je suis également auto-entrepreneur. Je développe en freelance des sites internet. Pour le plaisir, je créé également des applications que je pense etre "utiles": Oloid (app pour les étudiants), Recettes (app pour trouver des recettes de cuisine), TCL (app de transport en communs).
+            </p>
+
+            <h3>Le site</h3>
+            <p>
+                Ce site est mon sujet d'expérimentation favori. Il s'agit d'un micro CMS implémentant le modèle MVC, écrit en PHP, basé sur un router CoffeeCode et Twig pour le templating. Le front-end publique est en vanilla CSS sans aucun JS pour un temps de chargement réduit, et le panneau administrateur est en Vue3.
+            </p>
+        </article>
+    </body>
+</html>

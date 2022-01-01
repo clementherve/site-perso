@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Articles</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/public/css/theme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+    {{ include('header.twig') }}
+
+	<div id="articles">
+		<article>
+			{% for article in articles %}
+                
+                <div class='article'>
+                    <a href='/article/{{ article.slug }}'><h3>{{ article.title }}</h3></a>
+                    <div class='tag-box'>
+                        {% for tag in article.tags %}
+                            <a href='/articles/tag/{{ tag }}'>#{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    <p>{{ article.excerpt }}</p>
+                </div>
+            {% endfor %}
+		</article>
+	</div>
+</body>
+</html>

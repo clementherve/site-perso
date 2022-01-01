@@ -1,0 +1,7 @@
+{
+    "require": {
+        "coffeecode/router": "^1.0",
+        "twig/twig": "^3.0",
+        "league/commonmark": "^2.1"
+    }
+}
