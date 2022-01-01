@@ -2,10 +2,8 @@
 
 
 >   ### Todo:
->   - [ ] fix /data/projects (not needed anymore)
->   - [ ] fix weird bug on admin panel (not saving tags first try + some remanent errors)
+>   - [ ] fix weird bugs on admin panel (not saving tags first try + some remanent errors)
 >
->   - [ ] push this to github without the /data folder
 >   - [ ] make repo public (make sure no private things are leaked -> github variables)
 >
 >   - [ ] create automatic deployment of github repo to the server
