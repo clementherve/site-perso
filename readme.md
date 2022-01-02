@@ -27,11 +27,25 @@
 
 ### Installation
 
-Install Postgrèsql PHP module and restart your server (here, nginx):
+Install packages with composer:
+```
+  composer install
+```
+
+Install Postgrèsql PHP module:
 ```bash
 sudo apt install php7.4-pgsql
-sudo systemctl restart nginx.service
+# apt search | grep pgsql
 ```
+
+Update or create a nginx config file for your website:
+```
+location  / {
+  rewrite ^(.*)$ /index.php?route=$1 last;
+}
+```
+Restart your server with `sudo systemctl restart nginx.service` or `sudo nginx -s reload`.
+
 
 Modify your `docker-compose.yml` as follow:
 ```yml
@@ -46,7 +60,7 @@ services:
     environment:
       POSTGRES_USER: <username>
       POSTGRES_PASSWORD: <password>
-      POSTGRES_DB: articles
+      POSTGRES_DB: blog
 ```
 And run it with `docker-compose up -d`.
 
